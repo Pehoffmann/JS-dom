@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 </head>
 <body>
-    <header>
+    <header class="header">
       <div class="logo-content">
         <img src="img/logo.png" alt="logo do site">
         <span>Landseeker</span>
@@ -22,5 +22,15 @@
         </ul>
       </div>
     </header>
+    <script>
+      let header = document.querySelector('header');
+      header.style.backgroundColor = "#6d267566";
+
+      let linkHome = document.querySelectorAll('a');
+      console.log(linkHome[1].getAttribute('href'));
+
+      linkHome[1].setAttribute('href','https://www.google.com.br/')
+
+    </script>
 </body>
 </html>
