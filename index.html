@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 </head>
 <body>
-    <header class="header">
+    <header>
       <div class="logo-content">
         <img src="img/logo.png" alt="logo do site">
         <span>Landseeker</span>
@@ -17,20 +17,51 @@
         <ul>
           <li class="toggle-menu"><a href="#">&#9776;</a></li>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="./pages/about.html">About</a></li>
+          <li><a href="./pages/contato.html">Contact</a></li>
         </ul>
       </div>
     </header>
-    <script>
-      let header = document.querySelector('header');
-      header.style.backgroundColor = "#6d267566";
 
-      let linkHome = document.querySelectorAll('a');
-      console.log(linkHome[1].getAttribute('href'));
+    <aside>
+      <div id='banner'>
+        <img src="./img/banner.jpg" alt="Banner Home">
+        <p>The Most Beautifuls Landscapes</p>
+        <h2>NEW ORLEANS FOREST</h2>
+        <button type="button" id="btnBanner">CHECK IT OUT</button>
+      </div>
+    </aside>
 
-      linkHome[1].setAttribute('href','https://www.google.com.br/')
+    <main>
+      <div class='containerMain'>
+        <img class='fotosMain'src="./img/product-1.png" alt="">
+        <button type="button" class="btnMain">SEE MORE</button>
+      </div>
+      <div class='containerMain'>
+        <img class='fotosMain'src="./img/product-2.jpg" alt="">
+        <button type="button" class="btnMain">SEE MORE</button>
+      </div>
+      <div class='containerMain'>
+        <img class='fotosMain'src="./img/product-3.jpg" alt="">
+        <button type="button" class="btnMain">SEE MORE</button>
+      </div>
+      <div class='containerMain'>
+        <img class='fotosMain'src="./img/product-4.jpg" alt="">
+        <button type="button" class="btnMain">SEE MORE</button>
+      </div>
+      <div class='containerMain'>
+        <img class='fotosMain'src="./img/product-5.jpg" alt="">
+        <button type="button" class="btnMain">SEE MORE</button>
+      </div>
+      <div class='containerMain'>
+        <img class='fotosMain'src="./img/product-6.jpg" alt="">
+        <button type="button" class="btnMain">SEE MORE</button>
+      </div>
+    </main>
 
-    </script>
+    <footer>
+      <p>Copyright &copy; Digital House</p>
+    </footer>
+   <script src="./JS/index.js"></script>
 </body>
 </html>
